@@ -2,11 +2,11 @@
 
 ![image](https://github.com/user-attachments/assets/1ee3197e-1df3-4617-8432-51149393d062)
 
-### Решение находится в файле Task1_1.py
+### Решение: https://github.com/EgorZhizhlo/MillionAgentsTask/blob/master/Task1_1.py
 
 ![image](https://github.com/user-attachments/assets/4cc9e006-1e3f-4b66-8165-32b53beedf54)
 
-### Решение находится в директории Task1_2
+### Решение: https://github.com/EgorZhizhlo/MillionAgentsTask/tree/master/Task1_2
 
 # Запуск 
     git clone https://github.com/EgorZhizhlo/MillionAgentsTask.git
@@ -18,7 +18,7 @@
 
 ![image](https://github.com/user-attachments/assets/91da27ef-35a9-41fb-90cb-5b8b88124850)
 
-### Решение:
+### Решение
     SELECT 
         user_id,
         SUM(CASE WHEN EXTRACT(YEAR FROM created_at) = 2022 THEN reward ELSE 0 END) AS reward_sum_2022
