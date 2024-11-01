@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сокращение URL</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Сокращение URL</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="/url" method="post" class="mt-4">
+                    <div class="form-group">
+                        <label for="url">Введите оригинальную ссылку для сокращения ссылки:</label>
+                        <input type="url" id="url" name="url" class="form-control" placeholder="https://example.com" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Создать</button>
+                </form>
+            </div>
+        </div>
+        {% if short_url %}
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-6 text-center">
+                    <div class="alert alert-success">
+                        <h4>Ваша короткая ссылка:</h4>
+                        <p>
+                            <a href="url/{{ short_url }}" target="_blank">{{ short_url }}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
